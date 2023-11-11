@@ -83,6 +83,6 @@ class FSM:
         to_final_state = self.get_transition()
         if to_final_state:
             to_final_state()
-            if self.state == final_state:
-                return True
+        if self.state == final_state:
+            return True
         return False
